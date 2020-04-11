@@ -1,0 +1,1781 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="9.05" multi-file="no">
+  <meta>
+    <name>学生管理功能设计</name>
+    <authors>Guzhz</authors>
+    <description>学生管理的功能设计</description>
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type stereotype="" type="UmlActivity" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlClass" />
+        <value>21</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="DrawingItem" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlInterface" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlAction" />
+        <value>31</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlFork" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlDecision" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type stereotype="" type="AbstractElementGroup" />
+        <value>1097</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlActivity" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlClass" />
+        <value>22</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="AbstractTextItem" />
+        <value>26</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlGeneralization" />
+        <value>17</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlInterface" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlProvidedInterfaceConnector" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlContainment" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlDependency" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlAction" />
+        <value>32</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlControlFlow" />
+        <value>30</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlFork" />
+        <value>10</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlObjectFlow" />
+        <value>22</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlDecision" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type stereotype="" type="UmlAssociation" />
+        <value>2</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlActivityDiagram</type>
+        <value>6</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>4</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.AttributeField</type>
+        <value>94</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>43</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management>
+    <persons>
+      <person id="P431a613cdfee47899d1e754f5f681726">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <tasks />
+    <requirements />
+    <issues />
+    <to-dos />
+  </management>
+  <glossary />
+  <types>
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="[][]" tid="" name="[][]" description="" nullable="false" />
+      <type id="void" tid="" name="void" description="" nullable="false" />
+      <type id="()" tid="" name="()" description="" nullable="false" />
+    </custom-types>
+  </types>
+  <filters />
+  <items>
+    <item id="di606935659528161273" cid="ACT030" type="action" name="查看学生请求，然后处理后并返回结果" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:12:47">
+      <style class="default" />
+    </item>
+  </items>
+  <models>
+    <model id="p15cb26171d894edea37be65ac644fa24_608991430" name="Model 1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>06/17/2019 21:04:05</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p4601fe71f280462e8b0f7f993ead8e98_999392562" name="学生管理功能类图" order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="82,-103">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/17/2019 21:05:38</creation-date>
+          <change-date>06/17/2019 21:17:52</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di378311160427146963" cid="C002" type="class" name="Response" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:07:00">
+            <style class="default" />
+            <attributes>
+              <attribute id="a109b67a6c72c4953824779bf5983fd11343" cid="AT005" name="JFrame tcf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8d1107c40b694868a9e7d16a590b379b616" cid="AT006" name="JFrame lf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a9188f953071c409ca4e318fc36af01df202" cid="AT007" name="JPanel jp1,jp2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a18a6f2588f594c25bbc262e5c06d800f781" cid="AT008" name="JPanel jp2_1,jp2_2,jp2_3,jp2_4,jp2_5" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a430b6c28afb04ab2993bc4ec45e6eab3626" cid="AT009" name="JButton jb1,jb1_1,jb1_2,jb1_3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a7d5e3ff659774b64b681e73dc24dc57b687" cid="AT010" name="JButton jb2,jb2_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a85949816d14d45ab9e542460400be752421" cid="AT011" name="JButton jb4,jb4_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ab81269557870491dacb2c5f8dac9e110141" cid="AT012" name="JButton jb5,jb5_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a1bdd934b1d4943958162f0a7ddedb8e6875" cid="AT013" name="boolean jp1FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a13a02c7e4c8c42479f76809dc4be6fdc52" cid="AT014" name="boolean jp2FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a3a7816b3be98463b888e00e894e6b131135" cid="AT015" name="boolean jp3FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="ae86a0b5f187e45518f938fb2169bb5db371" cid="AT016" name="boolean jp4FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a14bdad0950064a7480d3976be75c1ef6169" cid="AT017" name="boolean jp5FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="af1832b0d6a43436989b0983bef332835906" cid="AT018" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o63d036301f4d49ff8a192b6c480d03d1941" cid="OP003" name="jb1Fold" type="void" type-id="void" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o2259bc0308364a1d85cb292d4c9727d4169" cid="OP004" name="addStudentInfo" type="void" type-id="void" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o6b44b94e0c9b46328149122a6bf5e347891" cid="OP005" name="alterStudentInfo" type="void" type-id="void" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o27579494a6104554ab61be08f36ce21c271" cid="OP006" name="searchStudentInfo" type="void" type-id="void" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+          <item id="di980461054155881287" cid="GNR002" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:10:48">
+            <style class="default" />
+          </item>
+          <item id="di431267456390640826" cid="C004" type="class" name="AddStudentInfo" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:10:48">
+            <style class="default" />
+            <attributes>
+              <attribute id="a941104a7f9c441209bd1fd5aad1a5fc6443" cid="AT020" name="JFrame tcf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="ae2e64f63f79b492e892306cc464cf170481" cid="AT021" name="JPanel jp1_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ab9394266c25b455e85d2bf30d02383b2623" cid="AT022" name="JLabel jl0,jl1,jl2,jl3,jl4,jl5,jl6,jl7,jl8,jl9" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a2f3b00a159e746b0bff58d70c4c8da60640" cid="AT023" name="JTextField jtf1,jtf2,jtf3,jtf4,jtf5,jtf6" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ab1b99ad090424e31adcee3a2a7b6c9d4813" cid="AT024" name="JButton jb1,jb2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a0e8c81f5fbcb4f79a6e6f19244672f1e812" cid="AT025" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a06ccbcc7f8a84cb4896fe07c76e40355940" cid="AT026" name="File file" type="" type-id="" visibility="private" default-value="new File(&quot;AddStudent.txt&quot;)">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o8632b49c2ac347b9a61f0ad14c185355640" cid="OP007" name="init" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="off8a2c03ea1547edb50a3df806f8f541562" cid="OP008" name="getStudentInfo" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o6fd79abadf844e02a0a208547935c23e363" cid="OP009" name="reset" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+          <item id="di722355111383360620" cid="C007" type="class" name="AlterStudentInfo" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:15:21">
+            <style class="default" />
+            <attributes>
+              <attribute id="a676f46751deb49e4964adabafda03e83926" cid="AT027" name="JFrame tcf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a22eeaab7d8814db2af11f965763f1dcc694" cid="AT028" name="JPanel jp1_2,jp1_2_1,jp1_2_2,jp1_2_3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a30d6529dd12b408a9f0b0451bfd740af511" cid="AT029" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a156081c43b5b4090b8b3fbf427be28c3556" cid="AT030" name="JLabel jl1,jl2,jl3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8b22e85959564b94813d062ac7264eed653" cid="AT031" name="JButton jb1,jb2,jb3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a3b76eaf7b46f4cf58e38ff55951dcf83592" cid="AT032" name="JTextField jtf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a7514e7a90e0f4e2f80e89a2b7cebebef796" cid="AT033" name="JTable table" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a19e0f6f71d194d2f9c63f67796f7259a329" cid="AT034" name="Object" type="[][]" type-id="[][]" visibility="private" default-value="oldArr = new Object[4][6]">
+                <style class="default" />
+              </attribute>
+              <attribute id="a302f487851924b00b9fadc8c9a2a28fc160" cid="AT035" name="Object" type="[][]" type-id="[][]" visibility="private" default-value="newArr = new Object[4][6]">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o17baa316d8d04bb8b4c92464ac8cfc0b406" cid="OP010" name="init" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="oafb9430419e94d4788a5f256ba4b9dcd923" cid="OP011" name="getTableInfo" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o3e4733dac9df4be9a071c980d6010611772" cid="OP012" name="search" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pde0a405f93984be58a3c3caca93ad4db" name="Object" type="[][]" type-id="[][]" default-value="arr" />
+                  <parameter id="p1edd9f70b60446e0829a94790ebb1195" name="boolean newflag" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="di274317112733244893" cid="GNR003" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:15:21">
+            <style class="default" />
+          </item>
+          <item id="di764819297906828656" cid="GNR005" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:17:52">
+            <style class="default" />
+          </item>
+          <item id="di329752819646720717" cid="C009" type="class" name="SearchStudentInfo" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:17:52">
+            <style class="default" />
+            <attributes>
+              <attribute id="aaef3ab1c3da141049e910391064b5647944" cid="AT037" name="JFrame tcf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="aa90fb7cd5f344b2fb41404c9a7da96a8774" cid="AT038" name="JPanel jp1_3,jp1_3_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a04147baa4c9940749118783104072491433" cid="AT039" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="ofe1f6b631ab24f05b98dd60f6af1a0b5499" cid="OP013" name="SearchStudentInfo" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pb9d3c101d257454e9454f449c3fd05f0" name="JFrame tcf" type="" type-id="" />
+                  <parameter id="p8fe5d115561f4bfa810229f0edbb0675" name="JPanel jp1_3" type="" type-id="" />
+                  <parameter id="p3691c25c02b3463990caa741941c386c" name="List&lt;JPanel&gt; list" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o72deceff2463410a93430e16c60db555842" cid="OP014" name="initTable" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pdf96d40d2f19417fb36a3d3a02b19202" name="Object" type="[][]" type-id="[][]" default-value="arr" />
+                  <parameter id="pb72f09cb715d4d17acb610aa1d4197ad" name="boolean newflag" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o7c2b205964e24a88b066a342aead8cf9694" cid="OP015" name="initSearch" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di378311160427146963" iid="7d2e59a9f9c94a1882ca0a017c1373f7" creation-date="06/17/2019 21:07:00" order-index="0" type="entity">
+            <layout ax="1030" ay="-32" awidth="314" aheight="423" x="1030" y="-32" width="314" height="423" angle="0" />
+            <class />
+          </item>
+          <item id="di431267456390640826" iid="31197feb68d74e5197c6bb3cc4bb7dac" creation-date="06/17/2019 21:10:48" order-index="1" type="entity">
+            <layout ax="617" ay="-55" awidth="314" aheight="216" x="617" y="-55" width="314" height="216" angle="0" />
+            <class />
+          </item>
+          <item id="di980461054155881287" iid="f89cdb6b3a3644fdaf50614d09d9e832" creation-date="06/17/2019 21:10:48" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1030" y1="-21" x2="931" y2="-21" start-border-pos="0.993498817966903" end-border-pos="0.289351851851852" name-position="10,-10">
+              <points>
+                <point x="1030" y="-21" />
+                <point x="961" y="-21" />
+                <point x="931" y="-21" />
+              </points>
+            </layout>
+            <relation from="di378311160427146963" from-iid="7d2e59a9f9c94a1882ca0a017c1373f7" to="di431267456390640826" to-iid="31197feb68d74e5197c6bb3cc4bb7dac" />
+          </item>
+          <item id="di722355111383360620" iid="2d2d0405991741009d0c08b7b914677d" creation-date="06/17/2019 21:15:21" order-index="3" type="entity">
+            <layout ax="150" ay="28.5" awidth="314" aheight="302" x="150" y="28.5" width="314" height="302" angle="0" />
+            <class />
+          </item>
+          <item id="di274317112733244893" iid="e9cb297969b149f1b14543df7311edba" creation-date="06/17/2019 21:15:21" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1030" y1="180" x2="464" y2="180" start-border-pos="0.874704491725768" end-border-pos="0.375413907284768" name-position="10,-10">
+              <points>
+                <point x="1030" y="180" />
+                <point x="464" y="180" />
+              </points>
+            </layout>
+            <relation from="di378311160427146963" from-iid="7d2e59a9f9c94a1882ca0a017c1373f7" to="di722355111383360620" to-iid="2d2d0405991741009d0c08b7b914677d" />
+          </item>
+          <item id="di329752819646720717" iid="7b3ed1a32bb04499988c2702097ed8db" creation-date="06/17/2019 21:17:52" order-index="5" type="entity">
+            <layout ax="578" ay="233" awidth="366" aheight="292" x="578" y="233" width="366" height="292" angle="0" />
+            <class />
+          </item>
+          <item id="di764819297906828656" iid="acd2e6e57c2d4998b6169c8ddfe2b443" creation-date="06/17/2019 21:17:52" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1030" y1="311" x2="944" y2="311" start-border-pos="0.797281323877069" end-border-pos="0.316780821917808" name-position="10,-10">
+              <points>
+                <point x="1030" y="311" />
+                <point x="944" y="311" />
+              </points>
+            </layout>
+            <relation from="di378311160427146963" from-iid="7d2e59a9f9c94a1882ca0a017c1373f7" to="di329752819646720717" to-iid="7b3ed1a32bb04499988c2702097ed8db" to-field="a04147baa4c9940749118783104072491433" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-activity" id="p1fc4c3f3637843cab02d3e613c9fb98d_644132112" name="学生管理算法图" order-index="2" overview-order-index="0" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="43,0">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/17/2019 21:21:29</creation-date>
+          <change-date>06/17/2019 21:30:00</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di318055380447976144" cid="ACT001" type="action" name="学生管理" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:21:46">
+            <style class="default" />
+          </item>
+          <item id="di891794151997962451" cid="ACT002" type="action" name="添加学生" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:22:31">
+            <style class="default" />
+          </item>
+          <item id="di462780864859711151" cid="ELEM001" type="control-flow" name="点击" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:22:31">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di588138290776203206" cid="ACT003" type="action" name="各种录入信息的文本框" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:23:20">
+            <style class="default" />
+          </item>
+          <item id="di450840291145393625" cid="ELEM002" type="control-flow" name="生成" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:23:20">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di119555204794879590" cid="ACT004" type="action" name="AddStudent.txt" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:24:00">
+            <style class="default" />
+          </item>
+          <item id="di818308540321744829" cid="ELEM003" type="control-flow" name="信息保存为文件" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:24:00">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di283110350429144920" cid="ACT005" type="action" name="修改学生信息" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:24:48">
+            <style class="default" />
+          </item>
+          <item id="di611284884334300847" cid="ELEM004" type="control-flow" name="点击" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:24:48">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di214788411230820116" cid="ACT006" type="action" name="基本信息表格（可按指定条件查找）" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:25:21">
+            <style class="default" />
+          </item>
+          <item id="di596045800466842215" cid="ELEM005" type="control-flow" name="生成" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:25:21">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di706515204778383713" cid="ACT007" type="action" name="在表格中修改" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:26:36">
+            <style class="default" />
+          </item>
+          <item id="di368320522121528716" cid="ELEM006" type="control-flow" name="读取AddStudent.txt查询" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:26:36">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di116632181423463518" cid="ACT008" type="action" name="修改成功" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:27:51">
+            <style class="default" />
+          </item>
+          <item id="di590485762290707270" cid="ELEM007" type="control-flow" name="确认修改" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:27:51">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di924888312902791371" cid="ACT009" type="action" name="查询学生信息" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:28:32">
+            <style class="default" />
+          </item>
+          <item id="di198800894135245818" cid="ELEM008" type="control-flow" name="点击" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:28:32">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di186168111657038709" cid="ACT006" type="action" name="基本信息表格（可按指定条件查找）" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:25:21">
+            <style class="default" />
+          </item>
+          <item id="di988169968939730765" cid="ELEM009" type="object-flow" name="生成" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:29:06">
+            <style class="default" />
+            <object-flow guard="" />
+          </item>
+          <item id="di397018749613358200" cid="ACT010" type="action" name="搜索" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:30:00">
+            <style class="default" />
+          </item>
+          <item id="di228988212386312276" cid="ELEM010" type="control-flow" name="读取AddStudent.txt查询" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:30:00">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di318055380447976144" iid="0faa24331a804db3976cf1150763254a" creation-date="06/17/2019 21:21:46" order-index="0" type="entity">
+            <layout ax="654" ay="133" awidth="100" aheight="50" x="654" y="133" width="100" height="50" angle="0" />
+          </item>
+          <item id="di891794151997962451" iid="76b47ca33c5e4879ab1967d5a7165775" creation-date="06/17/2019 21:22:31" order-index="1" type="entity">
+            <layout ax="363" ay="254" awidth="100" aheight="50" x="363" y="254" width="100" height="50" angle="0" />
+          </item>
+          <item id="di462780864859711151" iid="e07306c585d646ab8034d2219abfc73f" creation-date="06/17/2019 21:22:31" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="654" y1="179" x2="463" y2="258" start-border-pos="0.771048126220703" end-border-pos="0.271048126220703" name-position="0,-1">
+              <points>
+                <point x="654" y="179" />
+                <point x="463" y="258" />
+              </points>
+            </layout>
+            <relation from="di318055380447976144" from-iid="0faa24331a804db3976cf1150763254a" to="di891794151997962451" to-iid="76b47ca33c5e4879ab1967d5a7165775" />
+          </item>
+          <item id="di588138290776203206" iid="b8f804ffd5dd4805b56790cffdbe9608" creation-date="06/17/2019 21:23:20" order-index="3" type="entity">
+            <layout ax="331.5" ay="395" awidth="163" aheight="50" x="331.5" y="395" width="163" height="50" angle="0" />
+          </item>
+          <item id="di450840291145393625" iid="b046514bfdcb46deaa54a63e221f98f8" creation-date="06/17/2019 21:23:20" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="413" y1="304" x2="413" y2="395" start-border-pos="0.625" end-border-pos="0.125" name-position="1,-7">
+              <points>
+                <point x="413" y="304" />
+                <point x="413" y="395" />
+              </points>
+            </layout>
+            <relation from="di891794151997962451" from-iid="76b47ca33c5e4879ab1967d5a7165775" to="di588138290776203206" to-iid="b8f804ffd5dd4805b56790cffdbe9608" />
+          </item>
+          <item id="di119555204794879590" iid="2313ef4ec182425ab0e037333f407238" creation-date="06/17/2019 21:24:00" order-index="5" type="entity">
+            <layout ax="348.5" ay="543" awidth="129" aheight="50" x="348.5" y="543" width="129" height="50" angle="0" />
+          </item>
+          <item id="di818308540321744829" iid="7a41444d3cef4b40907cbe97315bfc6f" creation-date="06/17/2019 21:24:00" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="413" y1="445" x2="413" y2="543" start-border-pos="0.625" end-border-pos="0.125" name-position="-3,-4">
+              <points>
+                <point x="413" y="445" />
+                <point x="413" y="543" />
+              </points>
+            </layout>
+            <relation from="di588138290776203206" from-iid="b8f804ffd5dd4805b56790cffdbe9608" to="di119555204794879590" to-iid="2313ef4ec182425ab0e037333f407238" />
+          </item>
+          <item id="di283110350429144920" iid="1b8810686624465597af7cdfc7bdf380" creation-date="06/17/2019 21:24:48" order-index="7" type="entity">
+            <layout ax="654" ay="254" awidth="100" aheight="50" x="654" y="254" width="100" height="50" angle="0" />
+          </item>
+          <item id="di611284884334300847" iid="1d3e2380c3ae4b959d8001ae275eac7d" creation-date="06/17/2019 21:24:48" order-index="8" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="704" y1="183" x2="704" y2="254" start-border-pos="0.625" end-border-pos="0.125" name-position="-1,2">
+              <points>
+                <point x="704" y="183" />
+                <point x="704" y="254" />
+              </points>
+            </layout>
+            <relation from="di318055380447976144" from-iid="0faa24331a804db3976cf1150763254a" to="di283110350429144920" to-iid="1b8810686624465597af7cdfc7bdf380" />
+          </item>
+          <item id="di214788411230820116" iid="ea3184dc78b64c7db729acbc3eba6f45" creation-date="06/17/2019 21:25:21" order-index="9" type="entity">
+            <layout ax="577" ay="386.5" awidth="254" aheight="67" x="577" y="386.5" width="254" height="67" angle="0" />
+          </item>
+          <item id="di596045800466842215" iid="6bb508fccf2c433e9789aeb8b63d5498" creation-date="06/17/2019 21:25:21" order-index="10" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="704" y1="304" x2="704" y2="386" start-border-pos="0.625" end-border-pos="0.125" name-position="17,3">
+              <points>
+                <point x="704" y="304" />
+                <point x="704" y="386" />
+              </points>
+            </layout>
+            <relation from="di283110350429144920" from-iid="1b8810686624465597af7cdfc7bdf380" to="di214788411230820116" to-iid="ea3184dc78b64c7db729acbc3eba6f45" />
+          </item>
+          <item id="di706515204778383713" iid="e478217f077f4cdd8db2157adaebaca0" creation-date="06/17/2019 21:26:36" order-index="11" type="entity">
+            <layout ax="654" ay="553.5" awidth="100" aheight="50" x="654" y="553.5" width="100" height="50" angle="0" />
+          </item>
+          <item id="di368320522121528716" iid="2b82d2a973054e018e8634c6c9856e16" creation-date="06/17/2019 21:26:36" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="704" y1="454" x2="704" y2="554" start-border-pos="0.625" end-border-pos="0.125" name-position="-1,20" name-width="185">
+              <points>
+                <point x="704" y="454" />
+                <point x="704" y="554" />
+              </points>
+            </layout>
+            <relation from="di214788411230820116" from-iid="ea3184dc78b64c7db729acbc3eba6f45" to="di706515204778383713" to-iid="e478217f077f4cdd8db2157adaebaca0" />
+          </item>
+          <item id="di116632181423463518" iid="2f316e390a1b43b6b21ad8d66ce45819" creation-date="06/17/2019 21:27:51" order-index="13" type="entity">
+            <layout ax="654" ay="703.5" awidth="100" aheight="50" x="654" y="703.5" width="100" height="50" angle="0" />
+          </item>
+          <item id="di590485762290707270" iid="d10187c0c2814e0a8c93a90cb1b1f3ff" creation-date="06/17/2019 21:27:51" order-index="14" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="704" y1="604" x2="704" y2="704" start-border-pos="0.625" end-border-pos="0.125" name-position="0,-5">
+              <points>
+                <point x="704" y="604" />
+                <point x="704" y="704" />
+              </points>
+            </layout>
+            <relation from="di706515204778383713" from-iid="e478217f077f4cdd8db2157adaebaca0" to="di116632181423463518" to-iid="2f316e390a1b43b6b21ad8d66ce45819" />
+          </item>
+          <item id="di198800894135245818" iid="f569494a4d904125956e72bb0b2ff0f4" creation-date="06/17/2019 21:28:32" order-index="16" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="754" y1="177" x2="965" y2="260" start-border-pos="0.472266845703125" end-border-pos="0.972266845703125" name-position="10,4">
+              <points>
+                <point x="754" y="177" />
+                <point x="965" y="260" />
+              </points>
+            </layout>
+            <relation from="di318055380447976144" from-iid="0faa24331a804db3976cf1150763254a" to="di924888312902791371" to-iid="2c8a02fa09c04fb19a27520677bd17db" />
+          </item>
+          <item id="di924888312902791371" iid="2c8a02fa09c04fb19a27520677bd17db" creation-date="06/17/2019 21:28:32" order-index="15" type="entity">
+            <layout ax="965" ay="254" awidth="100" aheight="50" x="965" y="254" width="100" height="50" angle="0" />
+          </item>
+          <item id="di397018749613358200" iid="595a31dddc5d4cf394bfab2450a613f5" creation-date="06/17/2019 21:30:00" order-index="18" type="entity">
+            <layout ax="965" ay="553.5" awidth="100" aheight="50" x="965" y="553.5" width="100" height="50" angle="0" />
+          </item>
+          <item id="di186168111657038709" iid="b047a5b13c4347fbada4cbd4b6b51d70" creation-date="06/17/2019 21:25:21" order-index="9" type="entity">
+            <layout ax="888" ay="386.5" awidth="254" aheight="67" x="888" y="386.5" width="254" height="67" angle="0" />
+          </item>
+          <item id="di228988212386312276" iid="7924f124bbee409c899e9f4094c688b6" creation-date="06/17/2019 21:30:00" order-index="19" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1015" y1="454" x2="1015" y2="554" start-border-pos="0.625" end-border-pos="0.125" name-position="10,1" name-width="321">
+              <points>
+                <point x="1015" y="454" />
+                <point x="1015" y="554" />
+              </points>
+            </layout>
+            <relation from="di186168111657038709" from-iid="b047a5b13c4347fbada4cbd4b6b51d70" to="di397018749613358200" to-iid="595a31dddc5d4cf394bfab2450a613f5" />
+          </item>
+          <item id="di988169968939730765" iid="db2460963cb74ce5b9f48e6adee25d6c" creation-date="06/17/2019 21:29:06" order-index="17" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1015" y1="304" x2="1015" y2="386" start-border-pos="0.625" end-border-pos="0.125" name-position="1,-1">
+              <points>
+                <point x="1015" y="304" />
+                <point x="1015" y="386" />
+              </points>
+            </layout>
+            <relation from="di924888312902791371" from-iid="2c8a02fa09c04fb19a27520677bd17db" to="di186168111657038709" to-iid="b047a5b13c4347fbada4cbd4b6b51d70" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-activity" id="pf3f6202052934eb3b9de179a6979ebe8_157445350" name="房间添加算法图" order-index="3" overview-order-index="1" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-17">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/17/2019 21:46:34</creation-date>
+          <change-date>06/17/2019 21:49:04</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di509995799750500164" cid="ACT011" type="action" name="房间添加" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:46:38">
+            <style class="default" />
+          </item>
+          <item id="di597515945203879796" cid="ACT012" type="action" name="生成添加房间界面" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:46:52">
+            <style class="default" />
+          </item>
+          <item id="di388950260952431736" cid="ELEM011" type="control-flow" name="点击按钮" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:46:52">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di539933047332370051" cid="ACT013" type="action" name="添加到文件DormNumber.txt" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:47:17">
+            <style class="default" />
+          </item>
+          <item id="di454884934730699599" cid="ELEM012" type="control-flow" name="文本框输入房间号，点击添加" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:47:17">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di496126895825584269" cid="ACT014" type="action" name="生成房间号表格" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:49:04">
+            <style class="default" />
+          </item>
+          <item id="di407003654691053922" cid="ELEM013" type="control-flow" name="自动读取DormNumber.txt" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:49:04">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di509995799750500164" iid="7dea30c1ac6245cdb6ba5490a2d45944" creation-date="06/17/2019 21:46:38" order-index="0" type="entity">
+            <layout ax="634" ay="90" awidth="100" aheight="50" x="634" y="90" width="100" height="50" angle="0" />
+          </item>
+          <item id="di597515945203879796" iid="bfcafdcdacd84effb22a845592f37909" creation-date="06/17/2019 21:46:52" order-index="1" type="entity">
+            <layout ax="617.5" ay="240" awidth="133" aheight="50" x="617.5" y="240" width="133" height="50" angle="0" />
+          </item>
+          <item id="di388950260952431736" iid="08f1b4791bdf4a1ea22759d55fe1145b" creation-date="06/17/2019 21:46:52" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="684" y1="140" x2="684" y2="240" start-border-pos="0.625" end-border-pos="0.125" name-position="0,-3">
+              <points>
+                <point x="684" y="140" />
+                <point x="684" y="240" />
+              </points>
+            </layout>
+            <relation from="di509995799750500164" from-iid="7dea30c1ac6245cdb6ba5490a2d45944" to="di597515945203879796" to-iid="bfcafdcdacd84effb22a845592f37909" />
+          </item>
+          <item id="di539933047332370051" iid="e84bbd9356564bdab6ece7c1f319992b" creation-date="06/17/2019 21:47:17" order-index="3" type="entity">
+            <layout ax="449" ay="390" awidth="218" aheight="50" x="449" y="390" width="218" height="50" angle="0" />
+          </item>
+          <item id="di454884934730699599" iid="5cde1cdd6ef249338005b37e355e3ff8" creation-date="06/17/2019 21:47:17" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="663" y1="290" x2="579" y2="390" start-border-pos="0.664473684210526" end-border-pos="0.149082568807339" name-position="3,3">
+              <points>
+                <point x="663" y="290" />
+                <point x="579" y="390" />
+              </points>
+            </layout>
+            <relation from="di597515945203879796" from-iid="bfcafdcdacd84effb22a845592f37909" to="di539933047332370051" to-iid="e84bbd9356564bdab6ece7c1f319992b" />
+          </item>
+          <item id="di496126895825584269" iid="ec04c7804ea94dc0bf67ff1cd356d2e0" creation-date="06/17/2019 21:49:04" order-index="5" type="entity">
+            <layout ax="769" ay="390" awidth="118" aheight="50" x="769" y="390" width="118" height="50" angle="0" />
+          </item>
+          <item id="di407003654691053922" iid="37002d1f6a954cabbf5b869063de1733" creation-date="06/17/2019 21:49:04" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="708" y1="290" x2="804" y2="390" start-border-pos="0.579887218045113" end-border-pos="0.0741525423728814" name-position="11,-3" name-width="173">
+              <points>
+                <point x="708" y="290" />
+                <point x="804" y="390" />
+              </points>
+            </layout>
+            <relation from="di597515945203879796" from-iid="bfcafdcdacd84effb22a845592f37909" to="di496126895825584269" to-iid="ec04c7804ea94dc0bf67ff1cd356d2e0" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-class" id="pfd643d66d9be4362a506179ca3fb913e_223873223" name="房间添加类图" order-index="4" overview-order-index="2" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-132">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/17/2019 21:51:13</creation-date>
+          <change-date>06/17/2019 21:52:02</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di902173505434638788" cid="C002" type="class" name="Response" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:07:00">
+            <style class="default" />
+            <attributes>
+              <attribute id="a109b67a6c72c4953824779bf5983fd11343" cid="AT005" name="JFrame tcf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8d1107c40b694868a9e7d16a590b379b616" cid="AT006" name="JFrame lf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a9188f953071c409ca4e318fc36af01df202" cid="AT007" name="JPanel jp1,jp2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a18a6f2588f594c25bbc262e5c06d800f781" cid="AT008" name="JPanel jp2_1,jp2_2,jp2_3,jp2_4,jp2_5" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a430b6c28afb04ab2993bc4ec45e6eab3626" cid="AT009" name="JButton jb1,jb1_1,jb1_2,jb1_3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a7d5e3ff659774b64b681e73dc24dc57b687" cid="AT010" name="JButton jb2,jb2_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a85949816d14d45ab9e542460400be752421" cid="AT011" name="JButton jb4,jb4_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ab81269557870491dacb2c5f8dac9e110141" cid="AT012" name="JButton jb5,jb5_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a1bdd934b1d4943958162f0a7ddedb8e6875" cid="AT013" name="boolean jp1FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a13a02c7e4c8c42479f76809dc4be6fdc52" cid="AT014" name="boolean jp2FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a3a7816b3be98463b888e00e894e6b131135" cid="AT015" name="boolean jp3FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="ae86a0b5f187e45518f938fb2169bb5db371" cid="AT016" name="boolean jp4FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a14bdad0950064a7480d3976be75c1ef6169" cid="AT017" name="boolean jp5FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="af1832b0d6a43436989b0983bef332835906" cid="AT018" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="of5054d2ce0584f2f88e144f9fa88ab3a951" cid="OP016" name="jb2Fold" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="oa406ea4d241f4ba789a265cee1bd16b0594" cid="OP017" name="addDorm" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+          <item id="di472866442856486875" cid="GNR007" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:52:02">
+            <style class="default" />
+          </item>
+          <item id="di137250189272959330" cid="C012" type="class" name="AddDorm" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:52:02">
+            <style class="default" />
+            <attributes>
+              <attribute id="ad7b4ae41212c43b2afc3e48aba96c08c765" cid="AT040" name="BufferedWriter bw" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a9d75f690cf6049dd982c418edf334b4b170" cid="AT041" name="BufferedReader br" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8f782ea2c0d14e2f842c50cae419b1d3373" cid="AT042" name="JFrame tcf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a89aca838471546ebb76b0382aa23accf294" cid="AT043" name="JPanel jp2_1,jp2_1_1,jp2_1_2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a2531643c07ee4000a3c3bf066363b50d594" cid="AT044" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a9bfcf0e82138499f9f2995e166ca767a30" cid="AT045" name="JLabel jl1,jl2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="aa16006cc84374953bbd6614c5d7c68ff265" cid="AT046" name="JTextField jtf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a0a92c5b2f44147b385564993fd5008ca906" cid="AT047" name="JButton jb1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a254934d860384950b3945466ad46bd40609" cid="AT048" name="JTable table" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a9f34cab148db4d3fbe94974dc8bc55f8406" cid="AT049" name="File file" type="" type-id="" visibility="private" default-value="new File(&quot;DormNumber.txt&quot;)">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o7016a51d4c6d4a2ab76e84ee465fe382997" cid="OP018" name="init" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="od7e161ebf3a04740b59e30db75360815916" cid="OP019" name="search" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p0e6768cc3d5a438a8423735c41aad86e" name="Object" type="[][]" type-id="[][]" default-value="arr" />
+                  <parameter id="pfd5af5cea54c4e25805741a4514736f3" name="boolean newflag" type="" type-id="" />
+                  <parameter id="p0f2a105cbedf4f31bae205ef5d979f3b" name="boolean enedit" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o906bf1a19bc146d0905cc807e2dd698f124" cid="OP020" name="addDorm" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di902173505434638788" iid="9751c9ef82b84dfca382fc68a1edb452" creation-date="06/17/2019 21:07:00" order-index="0" type="entity">
+            <layout ax="832" ay="-5" awidth="314" aheight="423" x="832" y="-5" width="314" height="423" angle="0" />
+            <class />
+          </item>
+          <item id="di137250189272959330" iid="e6675cb113504027964dbe11c8164964" creation-date="06/17/2019 21:52:02" order-index="1" type="entity">
+            <layout ax="376" ay="60.75" awidth="258" aheight="291.5" x="376" y="60.75" width="258" height="291.5" angle="0" />
+            <class />
+          </item>
+          <item id="di472866442856486875" iid="2062f38ecbb14504b56f00d14363dcbc" creation-date="06/17/2019 21:52:02" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="832" y1="206" x2="634" y2="206" start-border-pos="0.875295508274232" end-border-pos="0.374571183533448" name-position="10,-10">
+              <points>
+                <point x="832" y="206" />
+                <point x="634" y="206" />
+              </points>
+            </layout>
+            <relation from="di902173505434638788" from-iid="9751c9ef82b84dfca382fc68a1edb452" to="di137250189272959330" to-iid="e6675cb113504027964dbe11c8164964" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-activity" id="pa72e18802bfd4e02a58999cc5df41001_684362768" name="房间管理算法图" order-index="5" overview-order-index="3" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="105,90">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/17/2019 22:00:27</creation-date>
+          <change-date>06/17/2019 22:11:39</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di100857173880849168" cid="ACT015" type="action" name="房间管理" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:00:49">
+            <style class="default" />
+          </item>
+          <item id="di807604120615822787" cid="DC001" type="decision" name="事件监听" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:03:29">
+            <style class="default" />
+          </item>
+          <item id="di114570729249103820" cid="ELEM014" type="control-flow" name="点击按钮" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:03:29">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di865012679985071840" cid="ACT016" type="action" name="查询寝室信息" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:04:04">
+            <style class="default" />
+          </item>
+          <item id="di118591408248973607" cid="ELEM015" type="object-flow" name="点击按钮" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:04:04">
+            <style class="default" />
+            <object-flow guard="" />
+          </item>
+          <item id="di426731770802351530" cid="ACT017" type="action" name="住户基本信息表格、指定条件查询" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:04:39">
+            <style class="default" />
+          </item>
+          <item id="di556205882598672939" cid="ELEM016" type="control-flow" name="生成" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:04:39">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di923825820304044008" cid="ACT018" type="action" name="删除寝室" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:06:34">
+            <style class="default" />
+          </item>
+          <item id="di947793248168410333" cid="ELEM017" type="object-flow" name="点击按钮" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:06:34">
+            <style class="default" />
+            <object-flow guard="" />
+          </item>
+          <item id="di502086592767415077" cid="ACT019" type="action" name="生成所有寝室号为表格" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:06:57">
+            <style class="default" />
+          </item>
+          <item id="di268153067920767178" cid="ELEM018" type="control-flow" name="读取DormNumber.txt后" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:06:57">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di140727698208087381" cid="ACT020" type="action" name="录入需要删除的寝室号" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:07:55">
+            <style class="default" />
+          </item>
+          <item id="di416705837238218903" cid="ELEM019" type="control-flow" name="" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:07:55">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di416667454791792747" cid="ACT021" type="action" name="删除" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:08:10">
+            <style class="default" />
+          </item>
+          <item id="di582468369962272296" cid="ELEM020" type="control-flow" name="点击“删除”" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:08:10">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di346331212776336698" cid="ACT022" type="action" name="修改寝室" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:08:34">
+            <style class="default" />
+          </item>
+          <item id="di729744537111504252" cid="ELEM021" type="object-flow" name="点击按钮" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:08:34">
+            <style class="default" />
+            <object-flow guard="" />
+          </item>
+          <item id="di918436860238137216" cid="ACT023" type="action" name="生成所有寝室号为表格" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:09:43">
+            <style class="default" />
+          </item>
+          <item id="di401443617600787390" cid="ELEM022" type="control-flow" name="读取DormNumber.txt" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:09:43">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di279554765924563049" cid="ACT024" type="action" name="直接修改" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:11:03">
+            <style class="default" />
+          </item>
+          <item id="di786459578137131724" cid="ELEM023" type="control-flow" name="指定寝室号" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:11:03">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di431173130508974970" cid="ACT025" type="action" name="确认/取消修改" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:11:39">
+            <style class="default" />
+          </item>
+          <item id="di600691978729048346" cid="ELEM024" type="control-flow" name="按钮" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:11:39">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di100857173880849168" iid="8977b2c231b0421ca8595979f357f082" creation-date="06/17/2019 22:00:49" order-index="0" type="entity">
+            <layout ax="616" ay="113" awidth="100" aheight="50" x="616" y="113" width="100" height="50" angle="0" />
+          </item>
+          <item id="di502086592767415077" iid="2eb931d8b81744ed80b91b29e43c933a" creation-date="06/17/2019 22:06:57" order-index="9" type="entity">
+            <layout ax="584.5" ay="523" awidth="163" aheight="50" x="584.5" y="523" width="163" height="50" angle="0" />
+          </item>
+          <item id="di807604120615822787" iid="ea9d1c9e9fc34e23aaa3178814680ed6" creation-date="06/17/2019 22:03:29" order-index="1" type="entity">
+            <layout ax="578" ay="246" awidth="176" aheight="61" x="578" y="246" width="176" height="61" angle="0" name-position="0,31" />
+          </item>
+          <item id="di268153067920767178" iid="b183a6ad9f9f42b2a4a3b3d5c493a5fc" creation-date="06/17/2019 22:06:57" order-index="10" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="666" y1="440" x2="666" y2="523" start-border-pos="0.625" end-border-pos="0.125" name-position="-5,5" name-width="299">
+              <points>
+                <point x="666" y="440" />
+                <point x="666" y="523" />
+              </points>
+            </layout>
+            <relation from="di923825820304044008" from-iid="2b18dcef32ea41e58c6a19ca0e72c2eb" to="di502086592767415077" to-iid="2eb931d8b81744ed80b91b29e43c933a" />
+          </item>
+          <item id="di114570729249103820" iid="b6bea55731024db1acff700d2a0baca0" creation-date="06/17/2019 22:03:29" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="666" y1="163" x2="666" y2="246" start-border-pos="0.625" end-border-pos="0.125" name-position="2,-4">
+              <points>
+                <point x="666" y="163" />
+                <point x="666" y="246" />
+              </points>
+            </layout>
+            <relation from="di100857173880849168" from-iid="8977b2c231b0421ca8595979f357f082" to="di807604120615822787" to-iid="ea9d1c9e9fc34e23aaa3178814680ed6" />
+          </item>
+          <item id="di140727698208087381" iid="f50bff122b324ff795ba6877ededcfb6" creation-date="06/17/2019 22:07:55" order-index="11" type="entity">
+            <layout ax="584.5" ay="631" awidth="163" aheight="50" x="584.5" y="631" width="163" height="50" angle="0" />
+          </item>
+          <item id="di865012679985071840" iid="eea4b759bd4d41f1a6bff73b00e3cd58" creation-date="06/17/2019 22:04:04" order-index="3" type="entity">
+            <layout ax="395" ay="251.5" awidth="100" aheight="50" x="395" y="251.5" width="100" height="50" angle="0" />
+          </item>
+          <item id="di416705837238218903" iid="3dda94a2f7584156b34d6f5c60c1bab2" creation-date="06/17/2019 22:07:55" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="666" y1="573" x2="666" y2="631" start-border-pos="0.625" end-border-pos="0.125" name-position="10,-10">
+              <points>
+                <point x="666" y="573" />
+                <point x="666" y="631" />
+              </points>
+            </layout>
+            <relation from="di502086592767415077" from-iid="2eb931d8b81744ed80b91b29e43c933a" to="di140727698208087381" to-iid="f50bff122b324ff795ba6877ededcfb6" />
+          </item>
+          <item id="di118591408248973607" iid="9063caa4cc1c40768a2560059e825bbe" creation-date="06/17/2019 22:04:04" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="579" y1="276" x2="495" y2="276" start-border-pos="0.877049180327869" end-border-pos="0.3725" name-position="4,-10">
+              <points>
+                <point x="579" y="276" />
+                <point x="495" y="276" />
+              </points>
+            </layout>
+            <relation from="di807604120615822787" from-iid="ea9d1c9e9fc34e23aaa3178814680ed6" to="di865012679985071840" to-iid="eea4b759bd4d41f1a6bff73b00e3cd58" />
+          </item>
+          <item id="di416667454791792747" iid="c2da066e00e0422cafef400aa23b1ed7" creation-date="06/17/2019 22:08:10" order-index="13" type="entity">
+            <layout ax="616" ay="739" awidth="100" aheight="50" x="616" y="739" width="100" height="50" angle="0" />
+          </item>
+          <item id="di426731770802351530" iid="fb6637ae8be94081b0f80980475c514d" creation-date="06/17/2019 22:04:39" order-index="5" type="entity">
+            <layout ax="199" ay="251.5" awidth="113" aheight="50" x="199" y="251.5" width="113" height="50" angle="0" />
+          </item>
+          <item id="di582468369962272296" iid="5e0907c8c0734f54987a2ff64678b5b4" creation-date="06/17/2019 22:08:10" order-index="14" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="666" y1="681" x2="666" y2="739" start-border-pos="0.625" end-border-pos="0.125" name-position="6,2">
+              <points>
+                <point x="666" y="681" />
+                <point x="666" y="739" />
+              </points>
+            </layout>
+            <relation from="di140727698208087381" from-iid="f50bff122b324ff795ba6877ededcfb6" to="di416667454791792747" to-iid="c2da066e00e0422cafef400aa23b1ed7" />
+          </item>
+          <item id="di556205882598672939" iid="6d7aff3b0f65425988c5a9d845ec14f6" creation-date="06/17/2019 22:04:39" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="395" y1="276" x2="312" y2="276" start-border-pos="0.8775" end-border-pos="0.3725" name-position="5,-10">
+              <points>
+                <point x="395" y="276" />
+                <point x="312" y="276" />
+              </points>
+            </layout>
+            <relation from="di865012679985071840" from-iid="eea4b759bd4d41f1a6bff73b00e3cd58" to="di426731770802351530" to-iid="fb6637ae8be94081b0f80980475c514d" />
+          </item>
+          <item id="di346331212776336698" iid="85ca2af0fd454d8b80aabb28e6066f12" creation-date="06/17/2019 22:08:34" order-index="15" type="entity">
+            <layout ax="837" ay="251.5" awidth="99" aheight="50" x="837" y="251.5" width="99" height="50" angle="0" />
+          </item>
+          <item id="di923825820304044008" iid="2b18dcef32ea41e58c6a19ca0e72c2eb" creation-date="06/17/2019 22:06:34" order-index="7" type="entity">
+            <layout ax="616" ay="390" awidth="100" aheight="50" x="616" y="390" width="100" height="50" angle="0" />
+          </item>
+          <item id="di729744537111504252" iid="bd458393c14f4cf58fea9dd2bced9771" creation-date="06/17/2019 22:08:34" order-index="16" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="752" y1="276" x2="837" y2="276" start-border-pos="0.372950819672131" end-border-pos="0.8775" name-position="-4,-11">
+              <points>
+                <point x="752" y="276" />
+                <point x="837" y="276" />
+              </points>
+            </layout>
+            <relation from="di807604120615822787" from-iid="ea9d1c9e9fc34e23aaa3178814680ed6" to="di346331212776336698" to-iid="85ca2af0fd454d8b80aabb28e6066f12" />
+          </item>
+          <item id="di947793248168410333" iid="0f2281a4d3f0499fb46146e9a98c01cc" creation-date="06/17/2019 22:06:34" order-index="8" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="666" y1="307" x2="666" y2="390" start-border-pos="0.625" end-border-pos="0.125" name-position="-1,3">
+              <points>
+                <point x="666" y="307" />
+                <point x="666" y="390" />
+              </points>
+            </layout>
+            <relation from="di807604120615822787" from-iid="ea9d1c9e9fc34e23aaa3178814680ed6" to="di923825820304044008" to-iid="2b18dcef32ea41e58c6a19ca0e72c2eb" />
+          </item>
+          <item id="di918436860238137216" iid="25924f1cc8ce4b1ba38da5e6cbe1e6b7" creation-date="06/17/2019 22:09:43" order-index="17" type="entity">
+            <layout ax="1071" ay="251.5" awidth="163" aheight="50" x="1071" y="251.5" width="163" height="50" angle="0" />
+          </item>
+          <item id="di401443617600787390" iid="10bf5fcc0b6b4104b26de3b4dd5ef559" creation-date="06/17/2019 22:09:43" order-index="18" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="936" y1="276" x2="1071" y2="276" start-border-pos="0.3725" end-border-pos="0.8775" name-position="-2,-1">
+              <points>
+                <point x="936" y="276" />
+                <point x="1071" y="276" />
+              </points>
+            </layout>
+            <relation from="di346331212776336698" from-iid="85ca2af0fd454d8b80aabb28e6066f12" to="di918436860238137216" to-iid="25924f1cc8ce4b1ba38da5e6cbe1e6b7" />
+          </item>
+          <item id="di279554765924563049" iid="11ac3ff32d2d408889d4b9c81c8d8e2c" creation-date="06/17/2019 22:11:03" order-index="19" type="entity">
+            <layout ax="1102.5" ay="390" awidth="100" aheight="50" x="1102.5" y="390" width="100" height="50" angle="0" />
+          </item>
+          <item id="di786459578137131724" iid="78b77d1e1e824507b5201c2cc386e10e" creation-date="06/17/2019 22:11:03" order-index="20" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1152" y1="302" x2="1152" y2="390" start-border-pos="0.625766871165644" end-border-pos="0.12375" name-position="4,4">
+              <points>
+                <point x="1152" y="302" />
+                <point x="1152" y="390" />
+              </points>
+            </layout>
+            <relation from="di918436860238137216" from-iid="25924f1cc8ce4b1ba38da5e6cbe1e6b7" to="di279554765924563049" to-iid="11ac3ff32d2d408889d4b9c81c8d8e2c" />
+          </item>
+          <item id="di431173130508974970" iid="6875b05070c0451b911954d939d5468e" creation-date="06/17/2019 22:11:39" order-index="21" type="entity">
+            <layout ax="1096" ay="523" awidth="113" aheight="50" x="1096" y="523" width="113" height="50" angle="0" />
+          </item>
+          <item id="di600691978729048346" iid="a3a019fb5d1a40a1b862119f2cced1ba" creation-date="06/17/2019 22:11:39" order-index="22" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="1152" y1="440" x2="1152" y2="523" start-border-pos="0.62625" end-border-pos="0.123893805309735" name-position="2,0">
+              <points>
+                <point x="1152" y="440" />
+                <point x="1152" y="523" />
+              </points>
+            </layout>
+            <relation from="di279554765924563049" from-iid="11ac3ff32d2d408889d4b9c81c8d8e2c" to="di431173130508974970" to-iid="6875b05070c0451b911954d939d5468e" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-class" id="pda9d345bad6b4ea0a6dbe63f0dfc65fd_552740639" name="房间管理功能类图" order-index="6" overview-order-index="4" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-184">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/17/2019 22:13:25</creation-date>
+          <change-date>06/17/2019 22:22:49</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di647461480567837363" cid="C002" type="class" name="Response" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:07:00">
+            <style class="default" />
+            <attributes>
+              <attribute id="a109b67a6c72c4953824779bf5983fd11343" cid="AT005" name="JFrame tcf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8d1107c40b694868a9e7d16a590b379b616" cid="AT006" name="JFrame lf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a9188f953071c409ca4e318fc36af01df202" cid="AT007" name="JPanel jp1,jp2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a18a6f2588f594c25bbc262e5c06d800f781" cid="AT008" name="JPanel jp2_1,jp2_2,jp2_3,jp2_4,jp2_5" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a430b6c28afb04ab2993bc4ec45e6eab3626" cid="AT009" name="JButton jb1,jb1_1,jb1_2,jb1_3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a7d5e3ff659774b64b681e73dc24dc57b687" cid="AT010" name="JButton jb2,jb2_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a85949816d14d45ab9e542460400be752421" cid="AT011" name="JButton jb4,jb4_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ab81269557870491dacb2c5f8dac9e110141" cid="AT012" name="JButton jb5,jb5_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a1bdd934b1d4943958162f0a7ddedb8e6875" cid="AT013" name="boolean jp1FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a13a02c7e4c8c42479f76809dc4be6fdc52" cid="AT014" name="boolean jp2FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a3a7816b3be98463b888e00e894e6b131135" cid="AT015" name="boolean jp3FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="ae86a0b5f187e45518f938fb2169bb5db371" cid="AT016" name="boolean jp4FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a14bdad0950064a7480d3976be75c1ef6169" cid="AT017" name="boolean jp5FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="af1832b0d6a43436989b0983bef332835906" cid="AT018" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o63d036301f4d49ff8a192b6c480d03d1941" cid="OP003" name="jb3Fold" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o2259bc0308364a1d85cb292d4c9727d4169" cid="OP004" name="searchDormInfo" type="void" type-id="void" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o6b44b94e0c9b46328149122a6bf5e347891" cid="OP005" name="deleteDorm" type="void" type-id="void" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o27579494a6104554ab61be08f36ce21c271" cid="OP006" name="alterDorm" type="void" type-id="void" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+          <item id="di981398888184588356" cid="GNR009" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:16:08">
+            <style class="default" />
+          </item>
+          <item id="di109756144606308084" cid="C014" type="class" name="SearchDormInfo" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:16:08">
+            <style class="default" />
+            <attributes>
+              <attribute id="ad2936fd64bf64eae8288fc0729260325748" cid="AT050" name="JPanel jp3_1,jp3_1_1,jp3_1_2,jp3_1_3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8d99d1bd8d824eb5bb8cf7a294e9226266" cid="AT051" name="JPanel jp3_1_4" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a2a1f5085770d44c39d2ba3eadb0e895e62" cid="AT052" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="afba98897a2bd4d11a3ded71f2d8f6e25174" cid="AT053" name="JLabel jl1,jl2,jl3,jl4,jl5" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="aab751e52524b4ddda6b0c1fdbbb85f6b18" cid="AT054" name="JButton jb0,jb1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a7691f54ba92a4794be652e25d1d19ffc441" cid="AT055" name="JTextField jtf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ae57000bd71204f9780277cc0c4b1c033498" cid="AT056" name="JTable table" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="odedff8a6400648aea9774975a5f03912502" cid="OP022" name="init" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="oa79e42b5f8a74b4a8f63baafe0d7f161363" cid="OP023" name="searchDormNumber" type="()" type-id="()" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p89153f1dedb74c83bf6f73816d878966" name="Object" type="[][]" type-id="[][]" default-value="arr" />
+                  <parameter id="pedb1f121f02f4d61b75079c03e5ce850" name="boolean newflag" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o227d5f73a9f2497cbe2b704fa37c06aa961" cid="OP024" name="search" type="()" type-id="()" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pc289b2519a814fbe966093034172650a" name="Object" type="[][]" type-id="[][]" default-value="arr" />
+                  <parameter id="p41f7fcbd853d46659458598217189498" name="boolean newflag" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="di678089704778175562" cid="C015" type="class" name="DeleteDorm" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:18:45">
+            <style class="default" />
+            <attributes>
+              <attribute id="aa5a25075fc2b45dcaaa39f7607e4281c749" cid="AT057" name="File file" type="" type-id="" visibility="private" default-value="new File(&quot;DormNumber.txt&quot;)">
+                <style class="default" />
+              </attribute>
+              <attribute id="a4b82517b52214fa7977bf01972d8441b309" cid="AT058" name="File file1" type="" type-id="" visibility="private" default-value="new File(&quot;DormNumber1.txt&quot;)">
+                <style class="default" />
+              </attribute>
+              <attribute id="acd65c8597b2d458a946a667a99fb852978" cid="AT059" name="BufferedWriter bw" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ae7584d3829c444d8be92687f98d8be6764" cid="AT060" name="BufferedReader br" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a188af6dcdf2b4954811752da9934bf0d545" cid="AT061" name="JFrame tcf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="af29aebe22f9a4e948588ac3973566854672" cid="AT062" name="JPanel jp3_2,jp3_2_1,jp3_2_2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a17788a668d62448c99efdd040d12fce8895" cid="AT063" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ac76b0d21cc9e4b1f9de4969670e4ea8b504" cid="AT064" name="JLabel jl1,jl2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a6c3aa47767ac45c0ae74dcbaececd10e16" cid="AT065" name="JTextField jtf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a75835982ed634d8489d669c1543ea659766" cid="AT066" name="JTable table" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o295a91b2bcf645c4a5719b95eef0fbe6804" cid="OP025" name="DeleteDorm" type="()" type-id="()" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p1569c093084844fb9c670e102efc657f" name="JFrame tcf" type="" type-id="" />
+                  <parameter id="p99f25ba709184406b8821aeab615c305" name="JPanel jp3_2" type="" type-id="" />
+                  <parameter id="pc4abee4c1ea146239a0f8b4301ba9364" name="List&lt;JPanel&gt; list" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o4277f855a36a49f89ef51651cdd4c3ad259" cid="OP026" name="init" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="ofd02cfb5a1744ad8809b766131fd781f153" cid="OP027" name="search" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p68f1ba3c4982435bb6efa010845ff1c5" name="Object" type="[][]" type-id="[][]" default-value="arr" />
+                  <parameter id="p3a53b40290fb4081aeecc23e7c56ac72" name="boolean newflag" type="" type-id="" />
+                  <parameter id="pb945cac8a832463985209abc9c2e79fb" name="boolean enedit" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="od638eb95676f4aedab59205e43145de194" cid="OP028" name="deleteDorm" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+          <item id="di387794297411645734" cid="GNR010" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:18:45">
+            <style class="default" />
+          </item>
+          <item id="di803085821293725285" cid="C016" type="class" name="AlterDorm" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:21:47">
+            <style class="default" />
+            <attributes>
+              <attribute id="a3ca18532db1d4f56b268a8442c1d5f1d176" cid="AT067" name="JPanel jp3_3,jp3_3_1,jp3_3_2,jp3_3_3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a789ddcf6dc9b47e1b2257d65590fc9c8412" cid="AT068" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a7c0292322f6d4791affa3871785356a6320" cid="AT069" name="JLabel jl1,jl2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="af3c601005ed9400bbba8dab66dba1ac757" cid="AT070" name="JButton jb1,jb2,jb3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a0ff5f6c2f1114fc7b7fef691ea03b54c951" cid="AT071" name="JTextField jtf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ab38f900fa3df41c4821f3255d2d179bc33" cid="AT072" name="JTable table" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="abe48da7d6f194a4b88eb1c87dfed0b03707" cid="AT073" name="Object" type="[][]" type-id="[][]" visibility="private" default-value="alterArr = new Object[2][1]">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o9f87e9ec0da24a28a928f1d46e061505723" cid="OP029" name="init" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="of3cd23706f214884b105d613ab2e21dd68" cid="OP030" name="getTableInfo" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o0c4d270700e14064bce02a7ecefa2f49996" cid="OP031" name="search" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p223d8de8f680464784648be8072d3f5f" name="Object" type="[][]" type-id="[][]" default-value="arr" />
+                  <parameter id="p6ad214469de14463b2a2f43d0529fcf2" name="boolean newflag" type="" type-id="" />
+                  <parameter id="p9a49bde1725b452ea25ce8fb30b3e83d" name="boolean enedit" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="di846760675553108357" cid="GNR011" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 22:21:47">
+            <style class="default" />
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di647461480567837363" iid="b9ca3bb20e2e4093a4dfc4e7af69eae2" creation-date="06/17/2019 21:07:00" order-index="0" type="entity">
+            <layout ax="984" ay="18" awidth="314" aheight="423" x="984" y="18" width="314" height="423" angle="0" />
+            <class />
+          </item>
+          <item id="di109756144606308084" iid="73ad47bd60c94132a837bbf6046ea9ea" creation-date="06/17/2019 22:16:08" order-index="1" type="entity">
+            <layout ax="550" ay="-47.5" awidth="294" aheight="252" x="550" y="-47.5" width="294" height="252" angle="0" />
+            <class />
+          </item>
+          <item id="di981398888184588356" iid="1b2bbf3c845847ad8b18cda5bc55451b" creation-date="06/17/2019 22:16:08" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="984" y1="18" x2="844" y2="18" start-border-pos="0" end-border-pos="0.314980158730159" name-position="10,-10">
+              <points>
+                <point x="984" y="18" />
+                <point x="844" y="18" />
+              </points>
+            </layout>
+            <relation from="di647461480567837363" from-iid="b9ca3bb20e2e4093a4dfc4e7af69eae2" to="di109756144606308084" to-iid="73ad47bd60c94132a837bbf6046ea9ea" to-field="a2a1f5085770d44c39d2ba3eadb0e895e62" />
+          </item>
+          <item id="di678089704778175562" iid="4913edea38384f409c91a92f1ed94837" creation-date="06/17/2019 22:18:45" order-index="3" type="entity">
+            <layout ax="72" ay="72" awidth="356" aheight="315" x="72" y="72" width="356" height="315" angle="0" />
+            <class />
+          </item>
+          <item id="di387794297411645734" iid="ce1c415c3aad4f5ca4b6e5c90cd5f586" creation-date="06/17/2019 22:18:45" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="984" y1="230" x2="428" y2="230" start-border-pos="0.874704491725768" end-border-pos="0.375396825396825" name-position="10,-10">
+              <points>
+                <point x="984" y="230" />
+                <point x="428" y="230" />
+              </points>
+            </layout>
+            <relation from="di647461480567837363" from-iid="b9ca3bb20e2e4093a4dfc4e7af69eae2" to="di678089704778175562" to-iid="4913edea38384f409c91a92f1ed94837" />
+          </item>
+          <item id="di803085821293725285" iid="69eab76d7238414986df2c183e2ce771" creation-date="06/17/2019 22:21:47" order-index="5" type="entity">
+            <layout ax="550" ay="263" awidth="329" aheight="252" x="550" y="263" width="329" height="252" angle="0" />
+            <class />
+          </item>
+          <item id="di846760675553108357" iid="873d25d69cc8481d8f3fde46555275ff" creation-date="06/17/2019 22:21:47" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="984" y1="289" x2="879" y2="289" start-border-pos="0.83983451536643" end-border-pos="0.275793650793651" name-position="10,-10" name-width="50">
+              <points>
+                <point x="984" y="289" />
+                <point x="879" y="289" />
+              </points>
+            </layout>
+            <relation from="di647461480567837363" from-iid="b9ca3bb20e2e4093a4dfc4e7af69eae2" to="di803085821293725285" to-iid="69eab76d7238414986df2c183e2ce771" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-activity" id="pdfb92901bdb94396801ed316150996d7_923795749" name="办理学生入住算法图" order-index="7" overview-order-index="5" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/17/2019 23:09:29</creation-date>
+          <change-date>06/17/2019 23:14:17</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di910123634560349006" cid="ACT026" type="action" name="办理学生入住" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:10:09">
+            <style class="default" />
+          </item>
+          <item id="di299964797793394340" cid="ACT027" type="action" name="审批学生办理" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:10:31">
+            <style class="default" />
+          </item>
+          <item id="di883567327208440252" cid="ELEM025" type="control-flow" name="点击" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:10:31">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di625094213150226406" cid="ACT028" type="action" name="查看更换寝室申请" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:10:56">
+            <style class="default" />
+          </item>
+          <item id="di415306951398586060" cid="ELEM026" type="control-flow" name="点击按钮" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:10:56">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di482075927890882294" cid="ACT029" type="action" name="查看新人入住申请" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:11:17">
+            <style class="default" />
+          </item>
+          <item id="di296773763706963197" cid="ELEM027" type="control-flow" name="点击按钮" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:11:17">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di534460454510957974" cid="ACT031" type="action" name="查看新用户传过来的请求信息，手动添加" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:14:17">
+            <style class="default" />
+          </item>
+          <item id="di351515647690531364" cid="ELEM028" type="control-flow" name="读取RequestDno.txt" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:12:47">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di113317269194330585" cid="ELEM029" type="control-flow" name="读取ResquestEnter.txt" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:14:17">
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di910123634560349006" iid="61cb27104c324b4ea37d263dcf3d9c93" creation-date="06/17/2019 23:10:09" order-index="0" type="entity">
+            <layout ax="649" ay="91" awidth="100" aheight="50" x="649" y="91" width="100" height="50" angle="0" />
+          </item>
+          <item id="di299964797793394340" iid="f3024b3364c54225980617ea46659b9f" creation-date="06/17/2019 23:10:31" order-index="1" type="entity">
+            <layout ax="649" ay="241" awidth="100" aheight="50" x="649" y="241" width="100" height="50" angle="0" />
+          </item>
+          <item id="di883567327208440252" iid="a790460e09d24f19abd66b77b3335f68" creation-date="06/17/2019 23:10:31" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="699" y1="141" x2="699" y2="241" start-border-pos="0.625" end-border-pos="0.125" name-position="1,3">
+              <points>
+                <point x="699" y="141" />
+                <point x="699" y="241" />
+              </points>
+            </layout>
+            <relation from="di910123634560349006" from-iid="61cb27104c324b4ea37d263dcf3d9c93" to="di299964797793394340" to-iid="f3024b3364c54225980617ea46659b9f" />
+          </item>
+          <item id="di625094213150226406" iid="1524067aedeb403d86154ff44d25b5e9" creation-date="06/17/2019 23:10:56" order-index="3" type="entity">
+            <layout ax="473" ay="391" awidth="133" aheight="50" x="473" y="391" width="133" height="50" angle="0" />
+          </item>
+          <item id="di415306951398586060" iid="0786394c9b044d349271f9d4eece883a" creation-date="06/17/2019 23:10:56" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="672" y1="291" x2="566" y2="391" start-border-pos="0.69125" end-border-pos="0.175751879699248" name-position="10,-10">
+              <points>
+                <point x="672" y="291" />
+                <point x="566" y="391" />
+              </points>
+            </layout>
+            <relation from="di299964797793394340" from-iid="f3024b3364c54225980617ea46659b9f" to="di625094213150226406" to-iid="1524067aedeb403d86154ff44d25b5e9" />
+          </item>
+          <item id="di482075927890882294" iid="e3468fadccef4e65a4369cfb15a81733" creation-date="06/17/2019 23:11:17" order-index="5" type="entity">
+            <layout ax="801" ay="391" awidth="133" aheight="50" x="801" y="391" width="133" height="50" angle="0" />
+          </item>
+          <item id="di296773763706963197" iid="f5d46e462efe4de3893910bdbc68378f" creation-date="06/17/2019 23:11:17" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="727" y1="291" x2="840" y2="391" start-border-pos="0.554583282470703" end-border-pos="0.0729949492260926" name-position="-2,-8">
+              <points>
+                <point x="727" y="291" />
+                <point x="840" y="391" />
+              </points>
+            </layout>
+            <relation from="di299964797793394340" from-iid="f3024b3364c54225980617ea46659b9f" to="di482075927890882294" to-iid="e3468fadccef4e65a4369cfb15a81733" />
+          </item>
+          <item id="di351515647690531364" iid="2b5d93b21fdb4311a8638159f31595a1" creation-date="06/17/2019 23:12:47" order-index="8" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="540" y1="441" x2="540" y2="551" start-border-pos="0.62406015037594" end-border-pos="0.12593984962406" name-position="0,0">
+              <points>
+                <point x="540" y="441" />
+                <point x="540" y="551" />
+              </points>
+            </layout>
+            <relation from="di625094213150226406" from-iid="1524067aedeb403d86154ff44d25b5e9" to="di606935659528161273" to-iid="2cca6a0ae60545f5b0f7c7ebeb439a4c" />
+          </item>
+          <item id="di606935659528161273" iid="2cca6a0ae60545f5b0f7c7ebeb439a4c" creation-date="06/17/2019 23:12:47" order-index="7" type="entity">
+            <layout ax="473" ay="551" awidth="133" aheight="50" x="473" y="551" width="133" height="50" angle="0" />
+          </item>
+          <item id="di534460454510957974" iid="162e1126da2e4eb3b54b5f4cb584d809" creation-date="06/17/2019 23:14:17" order-index="9" type="entity">
+            <layout ax="801" ay="551" awidth="133" aheight="50" x="801" y="551" width="133" height="50" angle="0" />
+          </item>
+          <item id="di113317269194330585" iid="a7799480796c4df7992d7ae5e4730be3" creation-date="06/17/2019 23:14:17" order-index="10" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="868" y1="441" x2="868" y2="551" start-border-pos="0.62406015037594" end-border-pos="0.12593984962406" name-position="10,-10">
+              <points>
+                <point x="868" y="441" />
+                <point x="868" y="551" />
+              </points>
+            </layout>
+            <relation from="di482075927890882294" from-iid="e3468fadccef4e65a4369cfb15a81733" to="di534460454510957974" to-iid="162e1126da2e4eb3b54b5f4cb584d809" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-class" id="p13ddf6e22211483687a6a80c6a3b8949_112749697" name="办理学生入住功能类图" order-index="8" overview-order-index="6" show-id="false" show-name="true" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="0,-117">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>06/17/2019 23:47:25</creation-date>
+          <change-date>06/18/2019 00:08:34</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di520416075329801632" cid="C002" type="class" name="Response" style-class="" visibility="package" change-tracking-state="added" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 21:07:00">
+            <style class="default" />
+            <attributes>
+              <attribute id="a109b67a6c72c4953824779bf5983fd11343" cid="AT005" name="JFrame tcf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8d1107c40b694868a9e7d16a590b379b616" cid="AT006" name="JFrame lf" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a9188f953071c409ca4e318fc36af01df202" cid="AT007" name="JPanel jp1,jp2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a18a6f2588f594c25bbc262e5c06d800f781" cid="AT008" name="JPanel jp2_1,jp2_2,jp2_3,jp2_4,jp2_5" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a430b6c28afb04ab2993bc4ec45e6eab3626" cid="AT009" name="JButton jb1,jb1_1,jb1_2,jb1_3" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a7d5e3ff659774b64b681e73dc24dc57b687" cid="AT010" name="JButton jb2,jb2_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a85949816d14d45ab9e542460400be752421" cid="AT011" name="JButton jb4,jb4_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="ab81269557870491dacb2c5f8dac9e110141" cid="AT012" name="JButton jb5,jb5_1" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a1bdd934b1d4943958162f0a7ddedb8e6875" cid="AT013" name="boolean jp1FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a13a02c7e4c8c42479f76809dc4be6fdc52" cid="AT014" name="boolean jp2FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a3a7816b3be98463b888e00e894e6b131135" cid="AT015" name="boolean jp3FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="ae86a0b5f187e45518f938fb2169bb5db371" cid="AT016" name="boolean jp4FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="a14bdad0950064a7480d3976be75c1ef6169" cid="AT017" name="boolean jp5FoldFlag" type="" type-id="" visibility="private" default-value="false">
+                <style class="default" />
+              </attribute>
+              <attribute id="af1832b0d6a43436989b0983bef332835906" cid="AT018" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o63d036301f4d49ff8a192b6c480d03d1941" cid="OP003" name="jb4Fold" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o2259bc0308364a1d85cb292d4c9727d4169" cid="OP004" name="receivingRequest" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+          <item id="di877740404319759103" cid="GNR013" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:57:05">
+            <style class="default" />
+          </item>
+          <item id="di852147517506782298" cid="C018" type="class" name="HandleEnter" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:57:05">
+            <style class="default" />
+            <attributes>
+              <attribute id="a5b62bd1eecc24428b96032e91b0d97d3401" cid="AT074" name="JFrame tcf" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a53ddee6b3f9f422988ed656b683b83ff13" cid="AT075" name="JPanel jp4_1,jp4_1_1,jp4_1_2,jp4_1_3,jp4_1_4" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a08166238882c427388443afc6d411685529" cid="AT076" name="JButton jb1,jb2,jb3,jb4" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="abd13fcb72c7e428999af2de1fe0154f8316" cid="AT077" name="JLabel jl1,jl2,jl3,jl4,jl5,jl6,jl7,jl8,jl9,jl10,jl11,jl12,jl13" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a6193dc0f3ff840d9bddb43f099106cbd743" cid="AT078" name="JTextArea jta1,jta2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a337ab72bcf7b493e9f8cee0f15459797470" cid="AT079" name="JTextField jtf1,jtf2" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a706e2184413b49868bdbc5260db3fcdd482" cid="AT080" name="List&lt;JPanel&gt; list" type="" type-id="" visibility="private">
+                <style class="default" />
+              </attribute>
+              <attribute id="a7f2896cd7e474e3f98053b966e04f8a2504" cid="AT081" name="File file" type="" type-id="" visibility="private" default-value="new File(&quot;AddStudent.txt&quot;)">
+                <style class="default" />
+              </attribute>
+              <attribute id="a0c5cc61bfe8542e18e9d97743b10ec80382" cid="AT082" name="File file1" type="" type-id="" visibility="private" default-value="new File(&quot;BindingInfo.txt&quot;)">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o98a5cefd8d304750b1a5efaec1adc504556" cid="OP032" name="init" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+              <operation id="o2d2f6dbb13a84db09514a2bf90edb897794" cid="OP033" name="addStudent" type="" type-id="" visibility="public">
+                <style class="default" />
+              </operation>
+            </operations>
+          </item>
+          <item id="di136666296699457781" cid="GNR015" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:59:15">
+            <style class="default" />
+          </item>
+          <item id="di420953695927002715" cid="C020" type="class" name="JudgeInfo" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/17/2019 23:59:15">
+            <style class="default" />
+            <attributes>
+              <attribute id="af6e21255ec6c47d48af34aaf00f879d1244" cid="AT083" name="BufferedReader br" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a12780dff78974ec592f63f0f57d463af528" cid="AT084" name="File file" type="" type-id="" visibility="private" default-value="new File(&quot;AddStudent.txt&quot;)">
+                <style class="default" />
+              </attribute>
+              <attribute id="ac943fd8c78fe47aea60087442c7bf30f327" cid="AT085" name="File file1" type="" type-id="" visibility="private" default-value="new File(&quot;DormNumber.txt&quot;)">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="od7bcde38945a4d83b589d9136222d292845" cid="OP034" name="isOnlySno" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p2783985cd0e04e3dad8d860cf82ff3a3" name="String sno" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="odf5d936722d7405e9227379be98d3423347" cid="OP035" name="isOnlyDno" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p25fdb32d70ea4ac68c9a768179943db1" name="String dno" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o623aec2487cf499d8d257c9825b1939e653" cid="OP036" name="existDno" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pb2f8ac54362f4c81981c71242bb66f4e" name="String dno" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o196bfde44bce41fc848e1da19ded547d445" cid="OP037" name="bedIsEmpty" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p35e1a6bd5cf64b8d9b232b362fc343e2" name="String dno" type="" type-id="" />
+                  <parameter id="p969cc4123d634ea1b87ae83aa0d7b2d9" name="String bedno" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o3f325acc34844d96b4d1b6eae4c7eae3586" cid="OP038" name="isLimit" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p39b7e03a42fb4653b9fdb628365cf0a4" name="String dno" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="di351901900295211073" cid="C021" type="class" name="BackRequestInfo" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/18/2019 00:01:17">
+            <style class="default" />
+            <attributes>
+              <attribute id="a102dcfd880f646a5a8d4037fe78b5963154" cid="AT086" name="File BackDno" type="" type-id="" visibility="private" default-value="new File(&quot;BackDno.txt&quot;)">
+                <style class="default" />
+              </attribute>
+              <attribute id="abd47510c293d4d07a7f66464ce42b724498" cid="AT087" name="File BackDno1" type="" type-id="" visibility="private" default-value="new File(&quot;BackDno1.txt&quot;)">
+                <style class="default" />
+              </attribute>
+              <attribute id="a5e83f99e11a24e8baded8c80802c1894118" cid="AT088" name="File BackEnter" type="" type-id="" visibility="private" default-value="new File(&quot;BackEnter.txt&quot;)">
+                <style class="default" />
+              </attribute>
+              <attribute id="a61483a26b79a48d79f828b9f054371ae535" cid="AT089" name="File BackEnter1" type="" type-id="" visibility="private" default-value="new File(&quot;BackEnter1.txt&quot;)">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8929341c7dff47329de2afc3f4fdfdc7608" cid="AT090" name="BufferedWriter bw" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a0d27012ddb4341d4a2fc6e4ee3191f3a719" cid="AT091" name="BufferedReader br" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a8621b4020fb44407bb4733d0d19859a6404" cid="AT092" name="BufferedReader br1" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+              <attribute id="a35736257a6574ad0b988fe4580d50c17718" cid="AT093" name="BufferedWriter bw1" type="" type-id="" visibility="private" default-value="null">
+                <style class="default" />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="ob3eae8ae7a6049caafd85c6dbfdf55e347" cid="OP039" name="setDnoResponse" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="paf17c4e3108d4df4897c57e761ab677e" name="String message" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o05ec8f408d5a43209e73bfb5dddcd1d9454" cid="OP040" name="getDnoResponse" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p6d2c0df50eb04d38b434292a83eba478" name="String username" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="oea12d7bc5bf749eea13fe9f66200462a202" cid="OP041" name="getEnterResponse" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="p514adbe73ef1406faf39b4f73eedee59" name="String sno" type="" type-id="" />
+                </parameters>
+              </operation>
+              <operation id="o0ee48326f140436a8f7be98626830a9e343" cid="OP042" name="getEnterResponse" type="" type-id="" visibility="public">
+                <style class="default" />
+                <parameters>
+                  <parameter id="pa459d05b5a63438c9e1768f86b588df1" name="String sno" type="" type-id="" />
+                </parameters>
+              </operation>
+            </operations>
+          </item>
+          <item id="di303682296921758063" cid="GNR016" type="generalization" name="" style-class="" visibility="package" creator="P431a613cdfee47899d1e754f5f681726" creation-date="06/18/2019 00:01:17">
+            <style class="default" />
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di520416075329801632" iid="2c9bfbce185747b68ddbba1ca201ba38" creation-date="06/17/2019 21:07:00" order-index="0" type="entity">
+            <layout ax="921.5" ay="24" awidth="314" aheight="423" x="921.5" y="24" width="314" height="423" angle="0" />
+            <class />
+          </item>
+          <item id="di852147517506782298" iid="79ad60d0de4d47d7a617e39201967e91" creation-date="06/17/2019 23:57:05" order-index="1" type="entity">
+            <layout ax="520" ay="84.75" awidth="296" aheight="301.5" x="520" y="84.75" width="296" height="301.5" angle="0" />
+            <class />
+          </item>
+          <item id="di877740404319759103" iid="888db5d26b414606b1c0cb875f336daf" creation-date="06/17/2019 23:57:05" order-index="2" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="922" y1="236" x2="816" y2="236" start-border-pos="0.874704491725768" end-border-pos="0.375414593698176" name-position="10,-10">
+              <points>
+                <point x="922" y="236" />
+                <point x="816" y="236" />
+              </points>
+            </layout>
+            <relation from="di520416075329801632" from-iid="2c9bfbce185747b68ddbba1ca201ba38" to="di852147517506782298" to-iid="79ad60d0de4d47d7a617e39201967e91" />
+          </item>
+          <item id="di420953695927002715" iid="2e74116e92654b66afab564cb9ab3269" creation-date="06/17/2019 23:59:15" order-index="3" type="entity">
+            <layout ax="115" ay="8" awidth="273" aheight="238" x="115" y="8" width="273" height="238" angle="0" />
+            <class />
+          </item>
+          <item id="di136666296699457781" iid="ef884e23735e4363825516b347f5cf66" creation-date="06/17/2019 23:59:15" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="388" y1="163" x2="520" y2="197" start-border-pos="0.412431316215451" end-border-pos="0.906740330938083" name-position="10,-10">
+              <points>
+                <point x="388" y="163" />
+                <point x="520" y="197" />
+              </points>
+            </layout>
+            <relation from="di420953695927002715" from-iid="2e74116e92654b66afab564cb9ab3269" to="di852147517506782298" to-iid="79ad60d0de4d47d7a617e39201967e91" />
+          </item>
+          <item id="di351901900295211073" iid="56040ff6f9b74de697bb80cb934c6524" creation-date="06/18/2019 00:01:17" order-index="5" type="entity">
+            <layout ax="88.5" ay="281.25" awidth="326" aheight="290" x="88.5" y="281.25" width="326" height="290" angle="0" />
+            <class />
+          </item>
+          <item id="di303682296921758063" iid="47822c37b2924bada65e2f3ed73f7f1d" creation-date="06/18/2019 00:01:17" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" lock-to-fields="false" auto-path="" x1="414" y1="352" x2="520" y2="304" start-border-pos="0.310999666411301" end-border-pos="0.818535521651184" name-position="10,-10">
+              <points>
+                <point x="414" y="352" />
+                <point x="520" y="304" />
+              </points>
+            </layout>
+            <relation from="di351901900295211073" from-iid="56040ff6f9b74de697bb80cb934c6524" to="di852147517506782298" to-iid="79ad60d0de4d47d7a617e39201967e91" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+  <documents />
+  <document-templates />
+</sim-project>
